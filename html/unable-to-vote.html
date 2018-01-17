@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>LetMeVote</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
+  </head>
+
+  <body>
+    <header>
+
+      <div class="top-bar">
+        <div class="top">
+          <div class="logo">
+            <a href="../html/index.html"><img class="logo-image" src="../img/logo-final-copy.png"></a>
+          </div>
+          <div class="letmevote">
+            <div class="letmetop"><h1>LET ME</h1></div>
+            <div class="votebottom"><h1 class="votebottom">VOTE</h1></div>
+          </div>
+        </div>
+        <div class="menu-list">
+          <ul class="big-list">
+            <li><a class="menu-item" href="../html/about.html">About</a> </li>
+            <li class="menu-item"> | <li>
+            <li><a class="menu-item" href="#">Upcoming Elections</a></li>
+            <li class="menu-item"> | <li>
+            <li><a class="menu-item" href="#">Voting Requirements</a></li>
+
+          </ul>
+        </div>
+        <div class="hamburger-icon">
+          <a class="hamburger-icon-style" href="#" id="menu-toggle">&#9776;</a>
+          <a class="cross-icon-style hide" href="#" id="menu-toggle-2">&#735;</a>
+
+        </div>
+
+      </div>
+    </header>
+    <div id="big-wrapper">
+
+      <div id="menu-list-mobile-wrapper">
+
+          <div class="mobile-list">
+            <div class="mobile-list-item"><a class="menu-item-mobile" href="../html/about.html">About</a> </div>
+            <div class="mobile-list-item"><a class="menu-item-mobile" href="#">Upcoming Elections</a></div>
+            <div class="mobile-list-item"><a class="menu-item-mobile" href="#">Voting Requirements</a></div>
+          </div>
+
+      </div>
+
+    <div id="content-wrapper">
+
+    <div class="main-homepage">
+    <div class="main-homepage-box-form">
+      <section>
+        <div class="headline fixed-headline">
+
+            <div><h2>ARIZONA’S 8TH DISTRICT</h2></div>
+            <div><h2>CONGRESSIONAL SPECIAL ELECTION</h2></div>
+          </h2>
+        </div>
+    </section>
+    <section>
+      <div class="child-body-section">
+      <div class="child-body-text">
+        <p>  Its important that everyone who wants to vote is allowed to vote.
+        There are reasons why you may not be allowed to vote, but some of these may be a violaton
+        of your rights. For more information, please fill out the form below.
+        </p></div>
+      </div>
+    </section>
+    <section class="child-body-section">
+      <form id="my-form">
+        <h4>What is your Address?</h4>
+
+        <div id="locationField">
+          <input id="autocomplete" placeholder="Enter your address"
+         onFocus="geolocate()" type="text"></input>
+       </div>
+       <h4>What is your race?</h4>
+        <select id="race">
+          <option>(Select)</option>
+          <option>Mixed Race</option>
+          <option>White</option>
+          <option>Black</option>
+          <option>Native American</option>
+          <option>North East Asian</option>
+          <option>South East Asian</option>
+          <option>Other Race</option>
+        </select>
+        <h4>What is your party affliation?</h4>
+         <select id="party">
+           <option>(Select)</option>
+           <option>Democrat</option>
+           <option>Republican</option>
+           <option>Independant</option>
+         </select>
+         <h4>Why were you turned away from voting today?</h4>
+          <select id="reason">
+            <option>(Select)</option>
+            <option value="reason-registration-issues">Registration Issues</option>
+            <option value="reason-id-issues">ID Issues</option>
+            <option value="reason-accessibility-issues">Accessibility Issues</option>
+          </select>
+            <!--*************REGISTRATION ISSUE PATH**************** -->
+            <div id="registration-issue-path" class="hide">
+              <p> Unfortunately, Arizona does not make it easy to register to vote.
+                In fact, some of these difficulties are actually violation of the National Voting Rights Act.</p>
+              <br>
+              <h5>What registration issue do you have?</h5>
+              <select id="registration-issues">
+                  <option>(Select)</option>
+                  <option value="address-change-option">I've recently changed my address</option>
+                  <option value="not-registered-option">I was told I am not registered to vote</option>
+                  <option value="none-registration-option">None of these apply to me.</option>
+              </select>
+            </div>
+                <!--*************ADDRESS CHANGE ISSUE PATH**************** -->
+                <div id="address-change-path" class="hide">
+                  <p>Depending on where you registered your new address, Arizona may be in violation of the National
+                  Voting Rights Act.</p>
+                  <br>
+                  <h5>Where did you change your address?</h5>
+                  <select id="address-change">
+                      <option> (Select)</option>
+                      <option value="address-change-option-ADOT">I changed my address at the ADOT office. </option>
+                      <option value="address-change-option-online">I changed my address online at Service Arizona.com. </option>
+                      <option>Somewhere else.</option>
+                  </select>
+                </div>
+                  <!--ADOT OFFICE address change-->
+                  <div id="ADOT-address-change-path" class="hide">
+                    <p>During change of address transactions conducted in ADOT offices, the agency requires voters to opt in
+                      to have their voter registration address updated, rather than using an opt-out procedure as required by
+                      the NVRA.
+                    <br>
+                    <br>
+                     This is a violation of your rights.
+                    </p>
+                  </div>
+                  <!--ONLINE address change-->
+                  <div id="online-address-change-path" class="hide">
+                    <p>When Arizonans change their address online through ServiceArizona.com, the authorized website for
+                      ADOT’s Motor Vehicle Division (MVD), voter registration information is not automatically updated as
+                      required by the NVRA.
+                    <br>
+                    <br>
+                     This is a violation of your rights.
+                    </p>
+                  </div>
+
+                <!--*************NOT REGISTERED ISSUE PATH**************** -->
+                <div id="not-registered-path" class="hide">
+                  <p>Arizona requires that you register to vote  </p>
+                  <br>
+                  <h3>Select from the Following:</h3>
+                  <select id="not-registered">
+                      <option> (Select)</option> <!--opt-group -->
+                      <option value="previously-registered">I have previously registered and have voted before. </option>
+                      <option value="filled-out-application">I filled out my voter registration application.</option>
+                  </select>
+                </div>
+                    <!--*************PREVIOUSLY VOTED BEFORE PATH**************** -->
+                    <div id="previously-not-registered-path" class="hide">
+                      <p>NEED MESSAGE. Great, you have previously registered to vote. IDK why you weren't able to vote today.</p>
+                    </div>
+                    <!--*************FILLED OUT APPLICATION BEFORE PATH**************** -->
+                    <div id="filled-application-not-registered-path" class="hide">
+                      <p>NEED MESSAGE. Great, you have filled out your application. IDK why you weren't able to vote today.</p>
+                    </div>
+            <!--*************ID ISSUE PATH**************** -->
+            <div id="id-issue-path" class="hide">
+              <p> Arizona has specific ID requirements that can be easy to misinterpret. The full list of the ID requirements
+                can be found <a class="intext-link" href="#">here</a>. Fortunately, a provisional ballot should always be offered
+                to voters unable to provide a valid form of identification. </p>
+              <br>
+              <h5> Were you offered to submit a provisional ballot today?</h5>
+              <br>
+                <div>
+                  <input type="radio" class="radio-button-form" name="provisional" value="yes"> Yes
+                  <input type="radio" class="radio-button-form" name="provisional" value="no"> No
+                </div>
+              <!-- information below taken from here: https://www.azsos.gov/elections/voting-election-->
+            </div>
+            <br>
+            <br>
+            <div id="provisional-yes" class="hide">
+              <p> If you attempted to vote at the correct polling place, and are registered to vote in the county
+                in which you voted, your provisional ballot will be counted.
+                <br>
+                <br>
+                The ballot will be valid and counted after you provide ID to your polling location before
+                7:00 pm on Election Day OR at the county elections office within three business days.
+                <br>
+                <br>
+                You can view the status of your ballot to determine when your registration eligibility has been validated and
+                your vote was counted by visiting the
+                 <a class="intext-link" href="https://voter.azsos.gov/VoterView/ProvisionalBallotSearch.do">Arizona Voter
+                   View Application</a>
+                 website.</p>
+            </div>
+            <div id="provisional-no" class="hide">
+              <p> Message about not being offered a provisional ballot</p>
+            </div>
+
+            <!--*************ACCESSIBILITY ISSUES PATH**************** -->
+
+            <div id="accessibility-issue-path" class="hide">
+              <p> All polling locations and vote centers have been chosen with special needs voters in mind. </p>
+              <br>
+              <p>The Arizona Center for Disability Law runs a hotline to address any election concerns for persons
+                with disabilities. The ACDL also will file Help America Vote Act (HAVA) complaints. You can call:
+                602-274-6287 or 1-800-927-2260 from 7:00 AM – 7:00 PM on Election Day.</p>
+
+            </div>
+      <input id="next-button" class="hide" type="button" value="Next">
+      </form>
+
+    </section>
+  </div>
+  </div>
+
+
+
+
+
+    <footer>
+      <p>Copyright 2017. LetMeVote.</p>
+    </footer>
+  </div>
+</div>
+
+    <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8kF61z4uNRSgsryXlC2BcSiuu4agxbaM&libraries=places"></script> -->
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8kF61z4uNRSgsryXlC2BcSiuu4agxbaM&libraries=places&callback=initAutocomplete" -->
+      <!-- async defer></script> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-database.js"></script>
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8kF61z4uNRSgsryXlC2BcSiuu4agxbaM&libraries=places&callback=initAutocomplete"
+        async defer></script>
+
+
+  <script src="../js/main.js"></script>
+    <script src="../js/menu.js"></script>
+
+  </body>
+</html>

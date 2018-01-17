@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>LetMeVote</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
+
+  </head>
+
+  <body>
+    <header>
+
+      <div class="top-bar">
+        <div class="top">
+          <div class="logo">
+            <a href="../html/index.html"><img class="logo-image" src="../img/logo-final-copy.png"></a>
+          </div>
+          <div class="letmevote">
+            <div class="letmetop"><h1>LET ME</h1></div>
+            <div class="votebottom"><h1 class="votebottom">VOTE</h1></div>
+          </div>
+        </div>
+        <div class="menu-list">
+          <ul class="big-list">
+            <li><a class="menu-item" href="../html/about.html">About</a> </li>
+            <li class="menu-item"> | <li>
+            <li><a class="menu-item" href="#">Upcoming Elections</a></li>
+            <li class="menu-item"> | <li>
+            <li><a class="menu-item" href="#">Voting Requirements</a></li>
+
+          </ul>
+        </div>
+        <div class="hamburger-icon">
+          <a class="hamburger-icon-style" href="#" id="menu-toggle">&#9776;</a>
+          <a class="cross-icon-style hide" href="#" id="menu-toggle-2">&#735;</a>
+
+        </div>
+
+      </div>
+    </header>
+    <div id="big-wrapper">
+
+      <div id="menu-list-mobile-wrapper">
+
+          <div class="mobile-list">
+            <div class="mobile-list-item"><a class="menu-item-mobile" href="../html/about.html">About</a> </div>
+            <div class="mobile-list-item"><a class="menu-item-mobile" href="#">Upcoming Elections</a></div>
+            <div class="mobile-list-item"><a class="menu-item-mobile" href="#">Voting Requirements</a></div>
+          </div>
+
+      </div>
+
+    <div id="content-wrapper">
+    <div class="main-homepage">
+    <div class="main-homepage-box-form">
+
+      <div class="headline fixed-headline">
+        <h2>VOTING REQUIREMENTS<h2>
+      </div>
+      <section class="child-body-section">
+        <div class="child-body-text"><p>When you arrive to vote at the polls on Election Day you will announce your name
+        and place of residence to the election official and present one form of identification from
+        List #1 or two different forms of identification from List #2 or 3. (A.R.S. § 16-579(A)
+        </p></div>
+        <div class="child-body-link"><a href="#"><div class="button learnmorebutton">LEARN MORE</div></a>
+        </div>
+
+    </section>
+    <div class="headline fixed-headline">
+      <h2>FIND A POLLING PLACE</h2>
+    </div>
+    <section class="child-body-section">
+
+      <div class="polling-columns">
+        <div class="polling-column">
+          <p class="child-body-text">In order for your ballot to count, you must go to the polling place assigned
+            for your current residence address.</p>
+            <br>
+          <h4>Input Your Address</h4>
+            <form id="my-form-2">
+            <div id="locationField">
+              <input id="autocomplete" placeholder="Enter your address"
+              onFocus="geolocate()" type="text"></input>
+            </div>
+          </form>
+            <div id="polling-place-information" class="hide">
+               <h4>Polling Location</h4>
+               <p>You are registered to vote at:</p>
+               <br>
+               <p>14202 N 73rd Ave,<br>
+                  Peoria, AZ 85381	</p>
+                  <br>
+               <p>Wheelchair Accessible</p>
+            </div>
+        </div>
+        <div class="polling-column">
+
+              <div id="map"></div>
+          <!-- <iframe width="370" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+          src="https://www.govtrack.us/congress/members/embed/mapframe?state=az&district=8&bounds=-112.636,34.017,-112.011,33.378"></iframe> -->
+        </div>
+     </div>
+
+
+      <!--<div id="map"></div>-->
+
+    </section>
+  </div>
+</div>
+
+
+
+
+
+    <footer>
+      <p>Copyright 2017. LetMeVote.</p>
+    </footer>
+</div>
+</div>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8kF61z4uNRSgsryXlC2BcSiuu4agxbaM&libraries=places&callback=initAutocomplete"
+    async defer></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/want-to-vote.js"></script>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+
+
+
+  </body>
+</html>
